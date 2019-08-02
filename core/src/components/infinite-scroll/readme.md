@@ -24,7 +24,7 @@ The Infinite Scroll component is not supported in React.
 ### Angular
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-button (click)="toggleInfiniteScroll()" expand="block">
     Toggle Infinite Scroll
   </ion-button>
@@ -37,7 +37,7 @@ The Infinite Scroll component is not supported in React.
       loadingText="Loading more data...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript
@@ -77,7 +77,7 @@ export class InfiniteScrollExample {
 ### Javascript
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-button onClick="toggleInfiniteScroll()" expand="block">
     Toggle Infinite Scroll
   </ion-button>
@@ -90,7 +90,7 @@ export class InfiniteScrollExample {
       loading-text="Loading more data...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 ```javascript

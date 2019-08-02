@@ -475,12 +475,12 @@ The `<ion-fab>` container was previously placed inside of the fixed content by d
 **Old Usage Example:**
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-fab top right edge>
     <!-- fab buttons and lists -->
   </ion-fab>
   Scrollable Content
-</ion-content>
+<ion-4-content>
 ```
 
 **New Usage Example:**
@@ -489,9 +489,9 @@ The `<ion-fab>` container was previously placed inside of the fixed content by d
 <ion-fab vertical="top" horizontal="end" edge slot="fixed">
   <!-- fab buttons and lists -->
 </ion-fab>
-<ion-content>
+<ion-4-content>
   Scrollable Content
-</ion-content>
+<ion-4-content>
 ```
 
 ## Grid
@@ -1266,7 +1266,7 @@ The `enabled` property (with a default value of `true`) has been renamed to `dis
 
 ```diff
 - <ion-scroll scrollX="true">
-+ <ion-content scrollX="true">
++ <ion-4-content scrollX="true">
 ```
 
 Another very good option is to style a `div` to become scrollable using CSS:

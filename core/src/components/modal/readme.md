@@ -176,9 +176,9 @@ customElements.define('modal-page', class extends HTMLElement {
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content class="ion-padding">
+<ion-4-content class="ion-padding">
   Modal Content
-</ion-content>`;
+<ion-4-content>`;
   }
 });
 
@@ -277,9 +277,9 @@ export const ModalExample: React.FunctionComponent = () => {
         <ion-title>{{ title }}</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content padding>
+    <ion-4-content padding>
       {{ content }}
-    </ion-content>
+    <ion-4-content>
   </div>
 </template>
 
@@ -301,9 +301,9 @@ export default {
 ```html
 <template>
   <ion-page class="ion-page" main>
-    <ion-content class="ion-content" padding>
+    <ion-4-content class="ion-content" padding>
       <ion-button @click="openModal">Open Modal</ion-button>
-    </ion-content>
+    <ion-4-content>
   </ion-page>
 </template>
 

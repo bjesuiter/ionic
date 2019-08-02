@@ -1,5 +1,5 @@
 ```html
-<ion-content>
+<ion-4-content>
   <ion-button (click)="toggleInfiniteScroll()" expand="block">
     Toggle Infinite Scroll
   </ion-button>
@@ -12,7 +12,7 @@
       loadingText="Loading more data...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript

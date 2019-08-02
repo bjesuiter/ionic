@@ -1,4 +1,29 @@
 
+ion-4-content,shadow
+ion-4-content,prop,color,string | undefined,undefined,false,false
+ion-4-content,prop,forceOverscroll,boolean | undefined,undefined,false,false
+ion-4-content,prop,fullscreen,boolean,false,false,false
+ion-4-content,prop,scrollEvents,boolean,false,false,false
+ion-4-content,prop,scrollX,boolean,false,false,false
+ion-4-content,prop,scrollY,boolean,true,false,false
+ion-4-content,method,getScrollElement,getScrollElement() => Promise<HTMLElement>
+ion-4-content,method,scrollByPoint,scrollByPoint(x: number, y: number, duration: number) => Promise<void>
+ion-4-content,method,scrollToBottom,scrollToBottom(duration?: number) => Promise<void>
+ion-4-content,method,scrollToPoint,scrollToPoint(x: number | null | undefined, y: number | null | undefined, duration?: number) => Promise<void>
+ion-4-content,method,scrollToTop,scrollToTop(duration?: number) => Promise<void>
+ion-4-content,event,ionScroll,ScrollDetail,true
+ion-4-content,event,ionScrollEnd,ScrollBaseDetail,true
+ion-4-content,event,ionScrollStart,ScrollBaseDetail,true
+ion-4-content,css-prop,--background
+ion-4-content,css-prop,--color
+ion-4-content,css-prop,--keyboard-offset
+ion-4-content,css-prop,--offset-bottom
+ion-4-content,css-prop,--offset-top
+ion-4-content,css-prop,--padding-bottom
+ion-4-content,css-prop,--padding-end
+ion-4-content,css-prop,--padding-start
+ion-4-content,css-prop,--padding-top
+
 ion-action-sheet,scoped
 ion-action-sheet,prop,animated,boolean,true,false,false
 ion-action-sheet,prop,backdropDismiss,boolean,true,false,false
@@ -272,31 +297,6 @@ ion-col,css-prop,--ion-grid-column-padding-sm
 ion-col,css-prop,--ion-grid-column-padding-xl
 ion-col,css-prop,--ion-grid-column-padding-xs
 ion-col,css-prop,--ion-grid-columns
-
-ion-content,shadow
-ion-content,prop,color,string | undefined,undefined,false,false
-ion-content,prop,forceOverscroll,boolean | undefined,undefined,false,false
-ion-content,prop,fullscreen,boolean,false,false,false
-ion-content,prop,scrollEvents,boolean,false,false,false
-ion-content,prop,scrollX,boolean,false,false,false
-ion-content,prop,scrollY,boolean,true,false,false
-ion-content,method,getScrollElement,getScrollElement() => Promise<HTMLElement>
-ion-content,method,scrollByPoint,scrollByPoint(x: number, y: number, duration: number) => Promise<void>
-ion-content,method,scrollToBottom,scrollToBottom(duration?: number) => Promise<void>
-ion-content,method,scrollToPoint,scrollToPoint(x: number | null | undefined, y: number | null | undefined, duration?: number) => Promise<void>
-ion-content,method,scrollToTop,scrollToTop(duration?: number) => Promise<void>
-ion-content,event,ionScroll,ScrollDetail,true
-ion-content,event,ionScrollEnd,ScrollBaseDetail,true
-ion-content,event,ionScrollStart,ScrollBaseDetail,true
-ion-content,css-prop,--background
-ion-content,css-prop,--color
-ion-content,css-prop,--keyboard-offset
-ion-content,css-prop,--offset-bottom
-ion-content,css-prop,--offset-top
-ion-content,css-prop,--padding-bottom
-ion-content,css-prop,--padding-end
-ion-content,css-prop,--padding-start
-ion-content,css-prop,--padding-top
 
 ion-datetime,shadow
 ion-datetime,prop,cancelText,string,'Cancel',false,false

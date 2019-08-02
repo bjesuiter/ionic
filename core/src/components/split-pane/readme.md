@@ -67,9 +67,9 @@ By default, the split pane will expand when the screen is larger than 992px. To 
   </ion-menu>
 
   <!-- the main content -->
-  <ion-content id="menu-content">
+  <ion-4-content id="menu-content">
     <h1>Hello</h1>
-  </ion-content>
+  <ion-4-content>
 </ion-split-pane>
 ```
 

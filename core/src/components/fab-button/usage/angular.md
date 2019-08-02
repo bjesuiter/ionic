@@ -1,5 +1,5 @@
 ```html
-<ion-content>
+<ion-4-content>
 
   <!-- Fixed Floating Action Button that does not scroll with the content -->
   <ion-fab>
@@ -19,5 +19,5 @@
   <ion-fab-button color="light">Light</ion-fab-button>
   <ion-fab-button color="dark">Dark</ion-fab-button>
 
-</ion-content>
+<ion-4-content>
 ```

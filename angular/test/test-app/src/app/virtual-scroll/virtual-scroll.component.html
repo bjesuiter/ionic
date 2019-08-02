@@ -11,7 +11,7 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-4-content>
   <ion-virtual-scroll [items]="items" [headerFn]="myHeaderFn" [footerFn]="myFooterFn">
     <ion-item-divider *virtualHeader="let header">{{ header }}</ion-item-divider>
     <ion-item-divider *virtualFooter="let footer">-- {{ footer }}</ion-item-divider>
@@ -26,4 +26,4 @@
       <ion-toggle slot="end" [(ngModel)]="item.checked"></ion-toggle>
     </ion-item>
   </ion-virtual-scroll>
-</ion-content>
+<ion-4-content>

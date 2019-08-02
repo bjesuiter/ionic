@@ -22,7 +22,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-title>Start Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-4-content>
     <ion-list>
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
@@ -30,7 +30,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
     </ion-list>
-  </ion-content>
+  <ion-4-content>
 </ion-menu>
 
 <ion-menu side="start" menuId="custom" class="my-custom-menu">
@@ -39,7 +39,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-title>Custom Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-4-content>
     <ion-list>
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
@@ -47,7 +47,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
     </ion-list>
-  </ion-content>
+  <ion-4-content>
 </ion-menu>
 
 <ion-menu side="end" type="push">
@@ -56,7 +56,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-title>End Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-4-content>
     <ion-list>
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
@@ -64,7 +64,7 @@ These can be controlled from the templates, or programmatically using the MenuCo
       <ion-item>Menu Item</ion-item>
       <ion-item>Menu Item</ion-item>
     </ion-list>
-  </ion-content>
+  <ion-4-content>
 </ion-menu>
 
 <ion-router-outlet main></ion-router-outlet>
@@ -116,7 +116,7 @@ constructor(private menu: MenuController) { }
         <ion-title>Start Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -124,7 +124,7 @@ constructor(private menu: MenuController) { }
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="start" menu-id="custom" class="my-custom-menu">
@@ -133,7 +133,7 @@ constructor(private menu: MenuController) { }
         <ion-title>Custom Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -141,7 +141,7 @@ constructor(private menu: MenuController) { }
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="end" type="push">
@@ -150,7 +150,7 @@ constructor(private menu: MenuController) { }
         <ion-title>End Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -158,7 +158,7 @@ constructor(private menu: MenuController) { }
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <div class="ion-page" main>
@@ -167,11 +167,11 @@ constructor(private menu: MenuController) { }
         <ion-title>Menu - Basic</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content padding>
+    <ion-4-content padding>
       <ion-button expand="block" onclick="openFirst()">Open Start Menu</ion-button>
       <ion-button expand="block" onclick="openEnd()">Open End Menu</ion-button>
       <ion-button expand="block" onclick="openCustom()">Open Custom Menu</ion-button>
-    </ion-content>
+    <ion-4-content>
   </div>
 
 </ion-app>
@@ -277,7 +277,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-title>Start Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -285,7 +285,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="start" menuId="custom" class="my-custom-menu">
@@ -294,7 +294,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-title>Custom Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -302,7 +302,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="end" type="push">
@@ -311,7 +311,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-title>End Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -319,7 +319,7 @@ export const MenuExample: React.FunctionComponent = () => (
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-router-outlet main></ion-router-outlet>

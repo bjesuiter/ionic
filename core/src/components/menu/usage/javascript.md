@@ -6,7 +6,7 @@
         <ion-title>Start Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -14,7 +14,7 @@
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="start" menu-id="custom" class="my-custom-menu">
@@ -23,7 +23,7 @@
         <ion-title>Custom Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -31,7 +31,7 @@
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <ion-menu side="end" type="push">
@@ -40,7 +40,7 @@
         <ion-title>End Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-4-content>
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
@@ -48,7 +48,7 @@
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
       </ion-list>
-    </ion-content>
+    <ion-4-content>
   </ion-menu>
 
   <div class="ion-page" main>
@@ -57,11 +57,11 @@
         <ion-title>Menu - Basic</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content padding>
+    <ion-4-content padding>
       <ion-button expand="block" onclick="openFirst()">Open Start Menu</ion-button>
       <ion-button expand="block" onclick="openEnd()">Open End Menu</ion-button>
       <ion-button expand="block" onclick="openCustom()">Open Custom Menu</ion-button>
-    </ion-content>
+    <ion-4-content>
   </div>
 
 </ion-app>

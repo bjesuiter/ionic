@@ -11,7 +11,7 @@ Footer can be a wrapper for ion-toolbar to make sure the content area is sized c
 ### Javascript
 
 ```html
-<ion-content></ion-content>
+<ion-4-content><ion-4-content>
 
 <ion-footer>
   <ion-toolbar>

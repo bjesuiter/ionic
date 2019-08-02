@@ -11,7 +11,7 @@ import { createColorClasses, hostContext } from '../../utils/theme';
  * @slot fixed - Should be used for fixed content that should not scroll.
  */
 @Component({
-  tag: 'ion-content',
+  tag: 'ion-4-content',
   styleUrl: 'content.scss',
   shadow: true
 })
@@ -47,7 +47,7 @@ export class Content implements ComponentInterface {
     isScrolling: true,
   };
 
-  @Element() el!: HTMLIonContentElement;
+  @Element() el!: HTMLIon4ContentElement;
 
   /**
    * The color to use from your application's color palette.

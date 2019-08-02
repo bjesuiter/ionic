@@ -18,9 +18,9 @@ customElements.define('modal-page', class extends HTMLElement {
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content class="ion-padding">
+<ion-4-content class="ion-padding">
   Modal Content
-</ion-content>`;
+<ion-4-content>`;
   }
 });
 

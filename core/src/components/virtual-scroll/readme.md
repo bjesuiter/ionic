@@ -109,7 +109,7 @@ The Virtual Scroll component is not supported in React.
 ### Angular
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-virtual-scroll [items]="items" approxItemHeight="320px">
     <ion-card *virtualItem="let item; let itemBounds = bounds;">
       <div>
@@ -121,7 +121,7 @@ The Virtual Scroll component is not supported in React.
     <ion-card-content>{{ item.content }}</ion-card-content>
     </ion-card>
   </ion-virtual-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript

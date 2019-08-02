@@ -1,9 +1,9 @@
 ```html
-<ion-content
+<ion-4-content
   [scrollEvents]="true"
   (ionScrollStart)="logScrollStart()"
   (ionScroll)="logScrolling($event)"
   (ionScrollEnd)="logScrollEnd()">
-</ion-content>
+<ion-4-content>
 ```
 

@@ -1,5 +1,5 @@
 ```html
-<ion-content>
+<ion-4-content>
   <ion-virtual-scroll [items]="items" approxItemHeight="320px">
     <ion-card *virtualItem="let item; let itemBounds = bounds;">
       <div>
@@ -11,7 +11,7 @@
     <ion-card-content>{{ item.content }}</ion-card-content>
     </ion-card>
   </ion-virtual-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript

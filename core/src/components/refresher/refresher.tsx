@@ -102,7 +102,7 @@ export class Refresher implements ComponentInterface {
       console.error('Make sure you use: <ion-refresher slot="fixed">');
       return;
     }
-    const contentEl = this.el.closest('ion-content');
+    const contentEl = this.el.closest('ion-4-content');
     if (contentEl) {
       this.scrollEl = await contentEl.getScrollElement();
     } else {
@@ -110,7 +110,7 @@ export class Refresher implements ComponentInterface {
     }
 
     this.gesture = (await import('../../utils/gesture')).createGesture({
-      el: this.el.closest('ion-content') as any,
+      el: this.el.closest('ion-4-content') as any,
       gestureName: 'refresher',
       gesturePriority: 10,
       direction: 'y',

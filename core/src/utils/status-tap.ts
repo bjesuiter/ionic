@@ -10,7 +10,7 @@ export const startStatusTap = () => {
       if (!el) {
         return;
       }
-      const contentEl = el.closest('ion-content');
+      const contentEl = el.closest('ion-4-content');
       if (contentEl) {
         contentEl.componentOnReady().then(() => {
           writeTask(() => contentEl.scrollToTop(300));

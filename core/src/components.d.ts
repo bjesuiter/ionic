@@ -78,6 +78,60 @@ import {
 } from './components/select/select-interface';
 
 export namespace Components {
+  interface Ion4Content {
+    /**
+    * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
+    */
+    'color'?: Color;
+    /**
+    * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
+    */
+    'forceOverscroll'?: boolean;
+    /**
+    * If `true`, the content will scroll behind the headers and footers. This effect can easily be seen by setting the toolbar to transparent.
+    */
+    'fullscreen': boolean;
+    /**
+    * Get the element where the actual scrolling takes place. This element can be used to subscribe to `scroll` events or manually modify `scrollTop`. However, it's recommended to use the API provided by `ion-content`:  i.e. Using `ionScroll`, `ionScrollStart`, `ionScrollEnd` for scrolling events and `scrollToPoint()` to scroll the content into a certain point.
+    */
+    'getScrollElement': () => Promise<HTMLElement>;
+    /**
+    * Scroll by a specified X/Y distance in the component.
+    * @param x The amount to scroll by on the horizontal axis.
+    * @param y The amount to scroll by on the vertical axis.
+    * @param duration The amount of time to take scrolling by that amount.
+    */
+    'scrollByPoint': (x: number, y: number, duration: number) => Promise<void>;
+    /**
+    * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
+    */
+    'scrollEvents': boolean;
+    /**
+    * Scroll to the bottom of the component.
+    * @param duration The amount of time to take scrolling to the bottom. Defaults to `0`.
+    */
+    'scrollToBottom': (duration?: number) => Promise<void>;
+    /**
+    * Scroll to a specified X/Y location in the component.
+    * @param x The point to scroll to on the horizontal axis.
+    * @param y The point to scroll to on the vertical axis.
+    * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
+    */
+    'scrollToPoint': (x: number | null | undefined, y: number | null | undefined, duration?: number) => Promise<void>;
+    /**
+    * Scroll to the top of the component.
+    * @param duration The amount of time to take scrolling to the top. Defaults to `0`.
+    */
+    'scrollToTop': (duration?: number) => Promise<void>;
+    /**
+    * If you want to enable the content scrolling in the X axis, set this property to `true`.
+    */
+    'scrollX': boolean;
+    /**
+    * If you want to disable the content scrolling in the Y axis, set this property to `false`.
+    */
+    'scrollY': boolean;
+  }
   interface IonActionSheet {
     /**
     * If `true`, the action sheet will animate.
@@ -612,60 +666,6 @@ export namespace Components {
     * The size of the column for xs screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
     'sizeXs'?: string;
-  }
-  interface IonContent {
-    /**
-    * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
-    */
-    'color'?: Color;
-    /**
-    * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
-    */
-    'forceOverscroll'?: boolean;
-    /**
-    * If `true`, the content will scroll behind the headers and footers. This effect can easily be seen by setting the toolbar to transparent.
-    */
-    'fullscreen': boolean;
-    /**
-    * Get the element where the actual scrolling takes place. This element can be used to subscribe to `scroll` events or manually modify `scrollTop`. However, it's recommended to use the API provided by `ion-content`:  i.e. Using `ionScroll`, `ionScrollStart`, `ionScrollEnd` for scrolling events and `scrollToPoint()` to scroll the content into a certain point.
-    */
-    'getScrollElement': () => Promise<HTMLElement>;
-    /**
-    * Scroll by a specified X/Y distance in the component.
-    * @param x The amount to scroll by on the horizontal axis.
-    * @param y The amount to scroll by on the vertical axis.
-    * @param duration The amount of time to take scrolling by that amount.
-    */
-    'scrollByPoint': (x: number, y: number, duration: number) => Promise<void>;
-    /**
-    * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
-    */
-    'scrollEvents': boolean;
-    /**
-    * Scroll to the bottom of the component.
-    * @param duration The amount of time to take scrolling to the bottom. Defaults to `0`.
-    */
-    'scrollToBottom': (duration?: number) => Promise<void>;
-    /**
-    * Scroll to a specified X/Y location in the component.
-    * @param x The point to scroll to on the horizontal axis.
-    * @param y The point to scroll to on the vertical axis.
-    * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
-    */
-    'scrollToPoint': (x: number | null | undefined, y: number | null | undefined, duration?: number) => Promise<void>;
-    /**
-    * Scroll to the top of the component.
-    * @param duration The amount of time to take scrolling to the top. Defaults to `0`.
-    */
-    'scrollToTop': (duration?: number) => Promise<void>;
-    /**
-    * If you want to enable the content scrolling in the X axis, set this property to `true`.
-    */
-    'scrollX': boolean;
-    /**
-    * If you want to disable the content scrolling in the Y axis, set this property to `false`.
-    */
-    'scrollY': boolean;
   }
   interface IonDatetime {
     /**
@@ -2882,6 +2882,12 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLIon4ContentElement extends Components.Ion4Content, HTMLStencilElement {}
+  var HTMLIon4ContentElement: {
+    prototype: HTMLIon4ContentElement;
+    new (): HTMLIon4ContentElement;
+  };
+
   interface HTMLIonActionSheetElement extends Components.IonActionSheet, HTMLStencilElement {}
   var HTMLIonActionSheetElement: {
     prototype: HTMLIonActionSheetElement;
@@ -3000,12 +3006,6 @@ declare global {
   var HTMLIonColElement: {
     prototype: HTMLIonColElement;
     new (): HTMLIonColElement;
-  };
-
-  interface HTMLIonContentElement extends Components.IonContent, HTMLStencilElement {}
-  var HTMLIonContentElement: {
-    prototype: HTMLIonContentElement;
-    new (): HTMLIonContentElement;
   };
 
   interface HTMLIonDatetimeElement extends Components.IonDatetime, HTMLStencilElement {}
@@ -3470,6 +3470,7 @@ declare global {
     new (): HTMLIonVirtualScrollElement;
   };
   interface HTMLElementTagNameMap {
+    'ion-4-content': HTMLIon4ContentElement;
     'ion-action-sheet': HTMLIonActionSheetElement;
     'ion-action-sheet-controller': HTMLIonActionSheetControllerElement;
     'ion-alert': HTMLIonAlertElement;
@@ -3490,7 +3491,6 @@ declare global {
     'ion-checkbox': HTMLIonCheckboxElement;
     'ion-chip': HTMLIonChipElement;
     'ion-col': HTMLIonColElement;
-    'ion-content': HTMLIonContentElement;
     'ion-datetime': HTMLIonDatetimeElement;
     'ion-fab': HTMLIonFabElement;
     'ion-fab-button': HTMLIonFabButtonElement;
@@ -3572,6 +3572,44 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface Ion4Content extends JSXBase.HTMLAttributes<HTMLIon4ContentElement> {
+    /**
+    * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
+    */
+    'color'?: Color;
+    /**
+    * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
+    */
+    'forceOverscroll'?: boolean;
+    /**
+    * If `true`, the content will scroll behind the headers and footers. This effect can easily be seen by setting the toolbar to transparent.
+    */
+    'fullscreen'?: boolean;
+    /**
+    * Emitted while scrolling. This event is disabled by default. Look at the property: `scrollEvents`
+    */
+    'onIonScroll'?: (event: CustomEvent<ScrollDetail>) => void;
+    /**
+    * Emitted when the scroll has ended.
+    */
+    'onIonScrollEnd'?: (event: CustomEvent<ScrollBaseDetail>) => void;
+    /**
+    * Emitted when the scroll has started.
+    */
+    'onIonScrollStart'?: (event: CustomEvent<ScrollBaseDetail>) => void;
+    /**
+    * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
+    */
+    'scrollEvents'?: boolean;
+    /**
+    * If you want to enable the content scrolling in the X axis, set this property to `true`.
+    */
+    'scrollX'?: boolean;
+    /**
+    * If you want to disable the content scrolling in the Y axis, set this property to `false`.
+    */
+    'scrollY'?: boolean;
+  }
   interface IonActionSheet extends JSXBase.HTMLAttributes<HTMLIonActionSheetElement> {
     /**
     * If `true`, the action sheet will animate.
@@ -4090,44 +4128,6 @@ declare namespace LocalJSX {
     * The size of the column for xs screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
     */
     'sizeXs'?: string;
-  }
-  interface IonContent extends JSXBase.HTMLAttributes<HTMLIonContentElement> {
-    /**
-    * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
-    */
-    'color'?: Color;
-    /**
-    * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
-    */
-    'forceOverscroll'?: boolean;
-    /**
-    * If `true`, the content will scroll behind the headers and footers. This effect can easily be seen by setting the toolbar to transparent.
-    */
-    'fullscreen'?: boolean;
-    /**
-    * Emitted while scrolling. This event is disabled by default. Look at the property: `scrollEvents`
-    */
-    'onIonScroll'?: (event: CustomEvent<ScrollDetail>) => void;
-    /**
-    * Emitted when the scroll has ended.
-    */
-    'onIonScrollEnd'?: (event: CustomEvent<ScrollBaseDetail>) => void;
-    /**
-    * Emitted when the scroll has started.
-    */
-    'onIonScrollStart'?: (event: CustomEvent<ScrollBaseDetail>) => void;
-    /**
-    * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
-    */
-    'scrollEvents'?: boolean;
-    /**
-    * If you want to enable the content scrolling in the X axis, set this property to `true`.
-    */
-    'scrollX'?: boolean;
-    /**
-    * If you want to disable the content scrolling in the Y axis, set this property to `false`.
-    */
-    'scrollY'?: boolean;
   }
   interface IonDatetime extends JSXBase.HTMLAttributes<HTMLIonDatetimeElement> {
     /**
@@ -6149,6 +6149,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'ion-4-content': Ion4Content;
     'ion-action-sheet': IonActionSheet;
     'ion-action-sheet-controller': IonActionSheetController;
     'ion-alert': IonAlert;
@@ -6169,7 +6170,6 @@ declare namespace LocalJSX {
     'ion-checkbox': IonCheckbox;
     'ion-chip': IonChip;
     'ion-col': IonCol;
-    'ion-content': IonContent;
     'ion-datetime': IonDatetime;
     'ion-fab': IonFab;
     'ion-fab-button': IonFabButton;

@@ -10,7 +10,7 @@ Fabs are container elements that contain one or more fab buttons. They should be
 ### Angular / javascript
 
 ```html
-<ion-content>
+<ion-4-content>
   <!-- fab placed to the top end -->
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button>
@@ -88,7 +88,7 @@ Fabs are container elements that contain one or more fab buttons. They should be
       <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
     </ion-fab-list>
   </ion-fab>
-</ion-content>
+<ion-4-content>
 ```
 
 
@@ -186,7 +186,7 @@ export const FabExample: React.FunctionComponent = () => (
 
 ```html
 <template>
-  <ion-content>
+  <ion-4-content>
     <!-- fab placed to the top end -->
     <ion-fab vertical="top" horizontal="end" slot="fixed">
       <ion-fab-button>
@@ -264,7 +264,7 @@ export const FabExample: React.FunctionComponent = () => (
         <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
       </ion-fab-list>
     </ion-fab>
-  </ion-content>
+  <ion-4-content>
 </template>
 ```
 

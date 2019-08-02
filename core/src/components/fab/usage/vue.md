@@ -1,6 +1,6 @@
 ```html
 <template>
-  <ion-content>
+  <ion-4-content>
     <!-- fab placed to the top end -->
     <ion-fab vertical="top" horizontal="end" slot="fixed">
       <ion-fab-button>
@@ -78,6 +78,6 @@
         <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
       </ion-fab-list>
     </ion-fab>
-  </ion-content>
+  <ion-4-content>
 </template>
 ```

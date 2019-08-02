@@ -34,7 +34,7 @@ const setScrollPadding = (input: HTMLElement, keyboardHeight: number) => {
     return;
   }
 
-  const el = input.closest('ion-content');
+  const el = input.closest('ion-4-content');
   if (el === null) {
     return;
   }

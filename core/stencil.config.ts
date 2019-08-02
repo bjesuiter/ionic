@@ -10,7 +10,7 @@ export const config: Config = {
     { components: ['ion-action-sheet'] },
     { components: ['ion-alert'] },
     { components: ['ion-back-button'] },
-    { components: ['ion-app', 'ion-router-outlet', 'ion-buttons', 'ion-content', 'ion-footer', 'ion-header', 'ion-title', 'ion-toolbar'] },
+    { components: ['ion-app', 'ion-router-outlet', 'ion-buttons', 'ion-4-content', 'ion-footer', 'ion-header', 'ion-title', 'ion-toolbar'] },
     { components: ['ion-avatar', 'ion-badge', 'ion-thumbnail'] },
     { components: ['ion-backdrop'] },
     { components: ['ion-button', 'ion-icon'] },

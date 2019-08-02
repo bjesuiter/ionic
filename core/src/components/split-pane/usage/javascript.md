@@ -10,8 +10,8 @@
   </ion-menu>
 
   <!-- the main content -->
-  <ion-content id="menu-content">
+  <ion-4-content id="menu-content">
     <h1>Hello</h1>
-  </ion-content>
+  <ion-4-content>
 </ion-split-pane>
 ```

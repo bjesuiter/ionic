@@ -1,5 +1,5 @@
 ```html
-<ion-content></ion-content>
+<ion-4-content><ion-4-content>
 ```
 
 ```javascript

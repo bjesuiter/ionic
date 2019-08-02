@@ -12,7 +12,7 @@ If the FAB button is not wrapped with `<ion-fab>`, it will scroll with the conte
 ### Angular / javascript
 
 ```html
-<ion-content>
+<ion-4-content>
 
   <!-- Fixed Floating Action Button that does not scroll with the content -->
   <ion-fab>
@@ -32,7 +32,7 @@ If the FAB button is not wrapped with `<ion-fab>`, it will scroll with the conte
   <ion-fab-button color="light">Light</ion-fab-button>
   <ion-fab-button color="dark">Dark</ion-fab-button>
 
-</ion-content>
+<ion-4-content>
 ```
 
 
@@ -70,7 +70,7 @@ export const FabButtonExample: React.FunctionComponent = () => (
 
 ```html
 <template>
-  <ion-content>
+  <ion-4-content>
 
     <!-- Fixed Floating Action Button that does not scroll with the content -->
     <ion-fab>
@@ -90,7 +90,7 @@ export const FabButtonExample: React.FunctionComponent = () => (
     <ion-fab-button color="light">Light</ion-fab-button>
     <ion-fab-button color="dark">Dark</ion-fab-button>
 
-  </ion-content>
+  <ion-4-content>
 </template>
 ```
 

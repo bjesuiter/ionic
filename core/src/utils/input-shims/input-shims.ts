@@ -25,7 +25,7 @@ export const startInputShims = (config: Config) => {
 
   const registerInput = (componentEl: HTMLElement) => {
     const inputEl = (componentEl.shadowRoot || componentEl).querySelector('input') || (componentEl.shadowRoot || componentEl).querySelector('textarea');
-    const scrollEl = componentEl.closest('ion-content');
+    const scrollEl = componentEl.closest('ion-4-content');
 
     if (!inputEl) {
       return;

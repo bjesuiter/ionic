@@ -14,28 +14,28 @@ The `ion-infinite-scroll-content` component is not supported in React.
 ### Angular
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-infinite-scroll>
     <ion-infinite-scroll-content
       loadingSpinner="bubbles"
       loadingText="Loading more data…">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 
 ### Javascript
 
 ```html
-<ion-content>
+<ion-4-content>
   <ion-infinite-scroll>
     <ion-infinite-scroll-content
       loading-spinner="bubbles"
       loading-text="Loading more data…">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
-</ion-content>
+<ion-4-content>
 ```
 
 
@@ -43,14 +43,14 @@ The `ion-infinite-scroll-content` component is not supported in React.
 
 ```html
 <template>
-  <ion-content>
+  <ion-4-content>
     <ion-infinite-scroll>
       <ion-infinite-scroll-content
         loadingSpinner="bubbles"
         loadingText="Loading more data…">
       </ion-infinite-scroll-content>
     </ion-infinite-scroll>
-  </ion-content>
+  <ion-4-content>
 </template>
 ```
 

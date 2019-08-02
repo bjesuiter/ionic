@@ -19,21 +19,21 @@ refresher.
 
 ```html
 <!-- Default Refresher -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Properties -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Content -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content
       pullingIcon="arrow-dropdown"
@@ -42,7 +42,7 @@ refresher.
       refreshingText="Refreshing...">
     </ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript
@@ -72,21 +72,21 @@ export class RefresherExample {
 
 ```html
 <!-- Default Refresher -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Properties -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" pull-factor="0.5" pull-min="100" pull-max="200">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Content -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed">
     <ion-refresher-content
       pulling-icon="arrow-dropdown"
@@ -95,7 +95,7 @@ export class RefresherExample {
       refreshing-text="Refreshing...">
     </ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 ```
 
 
@@ -153,21 +153,21 @@ export const RefresherExample: React.FunctionComponent = () => (
 ```html
 <template>
   <!-- Default Refresher -->
-  <ion-content>
+  <ion-4-content>
     <ion-refresher slot="fixed" @ionRefresh="doRefresh($event)">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
-  </ion-content>
+  <ion-4-content>
 
   <!-- Custom Refresher Properties -->
-  <ion-content>
+  <ion-4-content>
     <ion-refresher slot="fixed" pull-factor="0.5" pull-min="100" pull-max="200">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
-  </ion-content>
+  <ion-4-content>
 
   <!-- Custom Refresher Content -->
-  <ion-content>
+  <ion-4-content>
     <ion-refresher slot="fixed" @ionRefresh="doRefresh($event)">
       <ion-refresher-content
         pulling-icon="arrow-dropdown"
@@ -176,7 +176,7 @@ export const RefresherExample: React.FunctionComponent = () => (
         refreshing-text="Refreshing...">
       </ion-refresher-content>
     </ion-refresher>
-  </ion-content>
+  <ion-4-content>
 </template>
 
 <script lang="ts">

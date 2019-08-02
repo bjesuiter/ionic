@@ -6,7 +6,7 @@ import { getScrollData } from './scroll-data';
 export const enableScrollAssist = (
   componentEl: HTMLElement,
   inputEl: HTMLInputElement | HTMLTextAreaElement,
-  contentEl: HTMLIonContentElement,
+  contentEl: HTMLIon4ContentElement,
   keyboardHeight: number
 ) => {
   let coord: any;
@@ -44,7 +44,7 @@ export const enableScrollAssist = (
 const jsSetFocus = (
   componentEl: HTMLElement,
   inputEl: HTMLInputElement | HTMLTextAreaElement,
-  contentEl: HTMLIonContentElement,
+  contentEl: HTMLIon4ContentElement,
   keyboardHeight: number
 ) => {
   const scrollData = getScrollData(componentEl, contentEl, keyboardHeight);

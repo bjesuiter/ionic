@@ -14,19 +14,19 @@ Content, along with many other Ionic components, can be customized to modify its
 ### Angular
 
 ```html
-<ion-content
+<ion-4-content
   [scrollEvents]="true"
   (ionScrollStart)="logScrollStart()"
   (ionScroll)="logScrolling($event)"
   (ionScrollEnd)="logScrollEnd()">
-</ion-content>
+<ion-4-content>
 ```
 
 
 ### Javascript
 
 ```html
-<ion-content></ion-content>
+<ion-4-content><ion-4-content>
 ```
 
 ```javascript
@@ -59,12 +59,12 @@ const ContentExample: React.FunctionComponent = () => (
 
 ```html
 <template>
-  <ion-content
+  <ion-4-content
     :scrollEvents="true"
     @ionScrollStart="logScrollStart()"
     @ionScroll="logScrolling($event)"
     @ionScrollEnd="logScrollEnd()">
-  </ion-content>
+  <ion-4-content>
 </template>
 ```
 

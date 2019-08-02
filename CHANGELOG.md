@@ -557,7 +557,7 @@ the `"assets"` option of the `"build"`.
 * **angular:** Fix cordova browser error when resumed ([#16810](https://github.com/ionic-team/ionic/issues/16810)) ([e735d2c](https://github.com/ionic-team/ionic/commit/e735d2c))
 * **angular:** fix sibling router-outlets ([#16774](https://github.com/ionic-team/ionic/issues/16774)) ([35e3848](https://github.com/ionic-team/ionic/commit/35e3848)), closes [#16411](https://github.com/ionic-team/ionic/issues/16411)
 * **angular:** router-outlet memory leak ([2c41823](https://github.com/ionic-team/ionic/commit/2c41823)), closes [#16285](https://github.com/ionic-team/ionic/issues/16285)
-* **body:** body background matches ion-content ([0699884](https://github.com/ionic-team/ionic/commit/0699884))
+* **body:** body background matches ion-4-content ([0699884](https://github.com/ionic-team/ionic/commit/0699884))
 * **core:** export ionic lifecycle names ([77640c9](https://github.com/ionic-team/ionic/commit/77640c9)), closes [#16760](https://github.com/ionic-team/ionic/issues/16760)
 * **core:** ts lint issue ([#16814](https://github.com/ionic-team/ionic/issues/16814)) ([fb38002](https://github.com/ionic-team/ionic/commit/fb38002))
 * **list:** adjust label margin to align with spec for md ([#16751](https://github.com/ionic-team/ionic/issues/16751)) ([60ef98d](https://github.com/ionic-team/ionic/commit/60ef98d)), closes [#16643](https://github.com/ionic-team/ionic/issues/16643)
@@ -1104,7 +1104,7 @@ Here, we have an `ion-tab` element that accepts an icon, a label, and a link to 
   </ion-tab-bar>
 
   <ion-tab tab="home-view">
-    <ion-content></ion-content>
+    <ion-4-content></ion-4-content>
     <!-- or -->
     <ion-nav></ion-nav>
     <!-- or -->
@@ -1119,7 +1119,7 @@ There's a lot going on here, so let's break it down:
 1. A single parent `ion-tabs` wraps the entire layout. Same as before.
 2. A new element, `ion-tab-bar`, creates the Tab Bar which will contain buttons.
 3. A new element, `ion-tab-button`, is used to create each button in the Tab Bar. These could be static links to different routes, buttons with click handlers on them, or link to whole tab views.
-4. The `ion-tab` component becomes a separate container that has inline content (`ion-content`), a navigation component (`ion-nav`) or a router outlet (`ion-router-outlet`).
+4. The `ion-tab` component becomes a separate container that has inline content (`ion-4-content`), a navigation component (`ion-nav`) or a router outlet (`ion-router-outlet`).
 
 To connect the `ion-tab-button` to the `ion-tab`, the `tab` property must be added to both of these components. For example:
 
@@ -1323,7 +1323,7 @@ Lastly, this change also fixes some outstanding issues with Tabs, so we're excit
 
 ### Reverts
 
-* **content:** block scrolling in ion-content ([9badb08](https://github.com/ionic-team/ionic/commit/9badb08))
+* **content:** block scrolling in ion-4-content ([9badb08](https://github.com/ionic-team/ionic/commit/9badb08))
 
 
 
@@ -1812,7 +1812,7 @@ The following dependencies need to be updated to resolve build errors
 * **menu-button:** get proper styles when used inside ion-buttons ([811eee7](https://github.com/ionic-team/ionic/commit/811eee7))
 * **modal:** use flex to position modal to make it easier to size ([9488a98](https://github.com/ionic-team/ionic/commit/9488a98)), closes [#14392](https://github.com/ionic-team/ionic/issues/14392)
 * **overlay:** remove global css vars in overlays for local ones ([38b1e47](https://github.com/ionic-team/ionic/commit/38b1e47))
-* **refresher:** find parent ion-content properly ([4eab209](https://github.com/ionic-team/ionic/commit/4eab209)), closes [#14833](https://github.com/ionic-team/ionic/issues/14833)
+* **refresher:** find parent ion-4-content properly ([4eab209](https://github.com/ionic-team/ionic/commit/4eab209)), closes [#14833](https://github.com/ionic-team/ionic/issues/14833)
 * **slides:** swiper container should take up 100% height ([1d201ec](https://github.com/ionic-team/ionic/commit/1d201ec)), closes [#14771](https://github.com/ionic-team/ionic/issues/14771)
 * **spinner:** color can be customized in non-shadow-dom ([65008e7](https://github.com/ionic-team/ionic/commit/65008e7))
 * **spinner:** get paused attribute working and update tests ([3ab1e2d](https://github.com/ionic-team/ionic/commit/3ab1e2d)), closes [#14811](https://github.com/ionic-team/ionic/issues/14811)

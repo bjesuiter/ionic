@@ -24,9 +24,9 @@
                     </ion-toolbar>
                 </ion-header>
 
-                <ion-content padding>
+                <ion-4-content padding>
                     hola macho
-                </ion-content>
+                </ion-4-content>
             </ion-menu>
 
             <ion-vue-router></ion-vue-router>
@@ -49,14 +49,14 @@
             const Home = {
                 template: `<ion-page class="ion-page" main>
                     <toolbar title="Home"/>
-                    <ion-content class="ion-content" padding>
+                    <ion-4-content class="ion-content" padding>
                         <ion-button @click="alert">Trigger Alert</ion-button>
                         <ion-button @click="loading">Trigger Loading</ion-button>
                         <ion-button @click="menu">Toggle Menu</ion-button>
                         <ion-button @click="modal">Open Modal</ion-button>
                         <ion-button @click="popover">Open Popover</ion-button>
                         <ion-button @click="toast">Trigger Toast</ion-button>
-                    </ion-content>
+                    </ion-4-content>
                 </ion-page>`,
                 methods: {
                     alert() {
@@ -83,9 +83,9 @@
                         this.$ionic.modalController.create({
                             component: {
                                 template: `<div>
-                                    <ion-content padding>
+                                    <ion-4-content padding>
                                         <h1>Howdy!</h1>
-                                    </ion-content>
+                                    </ion-4-content>
                                 </div>`,
                             }
                         })

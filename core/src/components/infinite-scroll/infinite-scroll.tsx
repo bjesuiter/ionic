@@ -77,7 +77,7 @@ export class InfiniteScroll implements ComponentInterface {
   @Event() ionInfinite!: EventEmitter<void>;
 
   async componentDidLoad() {
-    const contentEl = this.el.closest('ion-content');
+    const contentEl = this.el.closest('ion-4-content');
     if (contentEl) {
       this.scrollEl = await contentEl.getScrollElement();
     }

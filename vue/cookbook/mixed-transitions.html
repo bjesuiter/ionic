@@ -49,9 +49,9 @@
             const Home = {
                 template: `<transition name="slide"><ion-page class="ion-page">
                     <toolbar title="Home"/>
-                    <ion-content class="ion-content" padding>
+                    <ion-4-content class="ion-content" padding>
                         <router-link to="/page">Go to page</router-link>
-                    </ion-content>
+                    </ion-4-content>
                 </ion-page></transition>`
             }
 
@@ -59,9 +59,9 @@
                 template: `<transition name="slide">
                     <ion-page class="ion-page">
                         <toolbar title="Page" backURL="/"/>
-                        <ion-content class="ion-content" padding>
+                        <ion-4-content class="ion-content" padding>
                             <ion-button @click="goHome">Go home</ion-button>
-                        </ion-content>
+                        </ion-4-content>
                     </ion-page>
                 </transition>`,
                 methods: {

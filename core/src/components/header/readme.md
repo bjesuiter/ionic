@@ -26,7 +26,7 @@ It's important to note that ion-header needs to be the one of the three root ele
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-4-content><ion-4-content>
 ```
 
 

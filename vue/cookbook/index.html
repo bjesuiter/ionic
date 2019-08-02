@@ -37,18 +37,18 @@
             const Home = {
                 template: `<ion-page class="ion-page">
                     <toolbar title="Home"/>
-                    <ion-content class="ion-content" padding>
+                    <ion-4-content class="ion-content" padding>
                         <router-link to="/page">Go to page</router-link>
-                    </ion-content>
+                    </ion-4-content>
                 </ion-page>`
             }
 
             const Page = {
                 template: `<ion-page class="ion-page">
                     <toolbar title="Page" backURL="/"/>
-                    <ion-content class="ion-content" padding>
+                    <ion-4-content class="ion-content" padding>
                         <ion-button @click="goHome">Go home</ion-button>
-                    </ion-content>
+                    </ion-4-content>
                 </ion-page>`,
                 methods: {
                     goHome() {

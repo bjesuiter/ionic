@@ -1,20 +1,20 @@
 ```html
 <!-- Default Refresher -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Properties -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 
 <!-- Custom Refresher Content -->
-<ion-content>
+<ion-4-content>
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content
       pullingIcon="arrow-dropdown"
@@ -23,7 +23,7 @@
       refreshingText="Refreshing...">
     </ion-refresher-content>
   </ion-refresher>
-</ion-content>
+<ion-4-content>
 ```
 
 ```typescript
